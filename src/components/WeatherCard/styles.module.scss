@@ -1,0 +1,26 @@
+.card {
+  min-width: 380px;
+};
+
+.cityName {
+  margin: auto;
+  font-size: 1.5rem;
+  color: #fff;
+};
+
+.weatherIconContainer {
+    margin: auto;
+    padding: 0 5px;
+};
+
+.weatherIcon {
+  font-size: 1.5rem;
+  color: #fff;
+  &:last-child {
+    margin-left: 8px;
+  };
+};
+
+.titleContainer {
+  background-color: #007eaf;
+};

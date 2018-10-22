@@ -1,0 +1,42 @@
+{
+  "coord": {
+    "lon": -70.65,
+    "lat": -33.44
+  },
+  "weather": [
+    {
+      "id": 803,
+      "main": "Clouds",
+      "description": "broken clouds",
+      "icon": "04d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 12,
+    "pressure": 1015,
+    "humidity": 54,
+    "temp_min": 12,
+    "temp_max": 12
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 1.5,
+    "deg": 40
+  },
+  "clouds": {
+    "all": 75
+  },
+  "dt": 1540206000,
+  "sys": {
+    "type": 1,
+    "id": 4645,
+    "message": 0.0706,
+    "country": "CL",
+    "sunrise": 1540201959,
+    "sunset": 1540249307
+  },
+  "id": 3871336,
+  "name": "Santiago",
+  "cod": 200
+}

@@ -1,9 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import renderWithRedux from 'helpers/renderWithRedux';
 import App from 'containers/App';
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+  const { getByText } = renderWithRedux(<App />);
+  const header = getByText('Weather Application');
+  expect(header.innerHTML).toBe('Weather Application')
 });

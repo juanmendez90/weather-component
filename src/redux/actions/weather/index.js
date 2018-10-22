@@ -4,7 +4,7 @@ import * as appLogActions from 'redux/actions/appLog';
 import alertColors from 'constants/alertColors';
 import * as API from 'api';
 
-const processWeather = item => ({
+export const processWeather = item => ({
   ...item,
   weather: item.weather[0],
 });
@@ -13,7 +13,7 @@ export const getWeatherForCities = cities => (dispatch, getState) => {
   dispatch({ type: consts.GET_WEATHER_FOR_CITIES });
   const { weatherReducer } = getState();
   const promises = cities.map(city => API.getWeatherByCity(city));
-  Promise.all(promises)
+  return Promise.all(promises)
     .then((response) => {
       const data = response.map(item => processWeather(item));
       if (weatherReducer.citiesData.length) {

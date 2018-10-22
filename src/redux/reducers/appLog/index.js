@@ -9,7 +9,6 @@ export default (state = initialState, action) => {
 
   switch (type) {
     case consts.WRITE_LOG: {
-      debugger
       const log = state.log.slice();
       log.push(data);
       return {

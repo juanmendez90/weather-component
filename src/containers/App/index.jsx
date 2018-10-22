@@ -17,7 +17,7 @@ const history = createBrowserHistory();
 const App = ({ hideAlert, alertReducer: { color, text } }) => (
   <Router history={history}>
     <>
-      <Header title="Waeather Application" links={navigation} />
+      <Header title="Weather Application" links={navigation} />
       <main>
         <Container className={styles.app}>
           <Alert className={styles.alert} color={color} isOpen={!!text} toggle={hideAlert}>

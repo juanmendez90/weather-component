@@ -1,11 +1,9 @@
 import React from 'react';
-import { render } from 'react-testing-library'
+import renderWithRedux from 'helpers/renderWithRedux';
 import WeatherScreen from 'containers/WeatherScreen';
 
-describe('WeatherScreen', () => {
-  it('renders the WeatherScreen', () => {
-    const { queryByText } = render(<WeatherScreen />)
-    const header = queryByText('Weather Application')
-    expect(header.innerHTML).toBe('Weather Application')
-  });
+it('renders without crashing', () => {
+  const { getByText } = renderWithRedux(<WeatherScreen />);
+  const header = getByText('Weather for cities:');
+  expect(header.innerHTML).toBe('Weather for cities:')
 });

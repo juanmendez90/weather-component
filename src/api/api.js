@@ -30,7 +30,7 @@ class Api {
     return new Promise((resolve, reject) => {
       axios.get(this.getUrl(url), processConfig(config))
         .then(({data}) => resolve(data))
-        .catch((error: any) => {
+        .catch((error) => {
           return reject(error);
         });
     });

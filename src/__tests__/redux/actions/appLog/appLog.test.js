@@ -1,8 +1,7 @@
 
 import moment from 'moment'
-import * as actions from 'redux/actions/appLog';
-import * as consts from 'redux/constants/appLog';
-import alertcolors from 'constants/alertColors';
+import { writeLog } from 'redux/actions/appLog';
+import { WRITE_LOG} from 'redux/constants/appLog';
 
 describe('Alert Actions', () => {
   const todoText = 'A todo';
@@ -11,9 +10,9 @@ describe('Alert Actions', () => {
     const data = {
       text: 'log entry',
     };
-    const result = actions.writeLog(data);
+    const result = writeLog(data);
     const expectedAction = {
-      type: consts.WRITE_LOG,
+      type: WRITE_LOG,
       data: {
         ...data,
         date: result.data.date,

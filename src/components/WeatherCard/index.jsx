@@ -3,7 +3,6 @@ import {
   Card, CardText, CardBody, CardTitle, Row, Col,
 } from 'reactstrap';
 import moment from 'moment';
-// import PropTypes from 'prop-types';
 import WeatherIcon from 'react-icons-weather';
 import { capitalize } from 'lodash';
 

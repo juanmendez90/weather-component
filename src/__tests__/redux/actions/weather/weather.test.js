@@ -15,8 +15,6 @@ const time = new Date(1893448800000);
 
 tk.freeze(time);
 
-// The time hasn't changed at all.
-
 describe('Weather Actions', () => {
   beforeEach(() => {
     moxios.install();
